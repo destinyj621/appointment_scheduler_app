@@ -5,29 +5,29 @@ import 'events.dart';
 import 'info.dart';
 import 'office_hours.dart';
 
-void main() => runApp(const BottomNavigationBarExampleApp());
+void main() => runApp(const BottomNavigationApp());
 
-class BottomNavigationBarExampleApp extends StatelessWidget {
-  const BottomNavigationBarExampleApp({super.key});
+class BottomNavigationApp extends StatelessWidget {
+  const BottomNavigationApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: BottomNavigationBarExample(),
+      home: BottomNavigation(),
     );
   }
 }
 
-class BottomNavigationBarExample extends StatefulWidget {
-  const BottomNavigationBarExample({super.key});
+class BottomNavigation extends StatefulWidget {
+  const BottomNavigation({super.key});
 
   @override
-  State<BottomNavigationBarExample> createState() =>
-      _BottomNavigationBarExampleState();
+  State<BottomNavigation> createState() =>
+      _BottomNavigationState();
 }
 
-class _BottomNavigationBarExampleState
-    extends State<BottomNavigationBarExample> {
+class _BottomNavigationState
+    extends State<BottomNavigation> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
@@ -47,7 +47,7 @@ class _BottomNavigationBarExampleState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BottomNavigationBar Sample'),
+        title: const Text(''),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
