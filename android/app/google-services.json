@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "899957745729",
+    "project_id": "appt-setter-8db8a",
+    "storage_bucket": "appt-setter-8db8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899957745729:android:cb6933f25fd6c9855fbec0",
+        "android_client_info": {
+          "package_name": "destiny.raburnel.appointmentsetter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899957745729-lkr6or8pfdcvb4t9gt5bof6nb0v5n8sp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRmyqYLijJHA1OOfoLZ0TObyf4_V7uu0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899957745729-lkr6or8pfdcvb4t9gt5bof6nb0v5n8sp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
