@@ -1,6 +1,8 @@
 //This page manages the navigation bar at the bottom
 //resource: https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html
+import 'package:booking_calendar/booking_calendar.dart';
 import 'package:flutter/material.dart';
+import 'book.dart';
 import 'events.dart';
 import 'info.dart';
 import 'office_hours.dart';
@@ -29,11 +31,9 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState
     extends State<BottomNavigation> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     OfficeHours(),
-    AppointmentScreen(),
+    BookingCalendarApp(),
     Info(),
   ];
 
@@ -59,8 +59,8 @@ class _BottomNavigationState
             label: 'Office Hours',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.schedule),
-            label: 'Schedule Appointment',
+            icon: Icon(Icons.calendar_month),
+            label: 'Schedule',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
