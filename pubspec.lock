@@ -89,6 +89,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
+  easy_url_launcher:
+    dependency: "direct main"
+    description:
+      name: easy_url_launcher
+      sha256: "3ffb6513e556f4ee4f31c0664046ffdc604bd34b1cbe45093b67cc99009d5eed"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.7"
   fake_async:
     dependency: transitive
     description:
@@ -182,14 +190,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_email_sender:
-    dependency: "direct main"
-    description:
-      name: flutter_email_sender
-      sha256: "9e253c69617f43d4cb5de672e93a7a19c12a21fb6a75e66c6ce7626336c4c1bc"
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.2.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -198,14 +198,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
-  flutter_mailer:
-    dependency: "direct main"
-    description:
-      name: flutter_mailer
-      sha256: "4fffaa35e911ff5ec2e5a4ebbca62c372e99a154eb3bb2c0bf79f09adf6ecf4c"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.1.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -390,7 +382,7 @@ packages:
     source: hosted
     version: "1.3.2"
   url_launcher:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: url_launcher
       sha256: "21b704ce5fa560ea9f3b525b43601c678728ba46725bab9b01187b4831377ed3"

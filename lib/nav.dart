@@ -3,7 +3,6 @@
 import 'package:booking_calendar/booking_calendar.dart';
 import 'package:flutter/material.dart';
 import 'book.dart';
-import 'events.dart';
 import 'info.dart';
 import 'office_hours.dart';
 

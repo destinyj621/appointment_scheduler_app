@@ -19,10 +19,6 @@ class _BookingCalendarAppState extends State<BookingCalendarApp> {
   final now = DateTime.now();
   late BookingService mockBookingService;
 
-  final TextEditingController _firstNameController = TextEditingController();
-  final TextEditingController _lastNameController = TextEditingController();
-  final TextEditingController _descriptionController = TextEditingController();
-
   @override
   void initState() {
     super.initState();
@@ -104,7 +100,7 @@ class _BookingCalendarAppState extends State<BookingCalendarApp> {
                   uploadingWidget: const CircularProgressIndicator(),
                   locale: 'en_US',
                   startingDayOfWeek: StartingDayOfWeek.sunday,
-                  wholeDayIsBookedWidget: const Text('Sorry, for this day everything is booked'),
+                  wholeDayIsBookedWidget: const Text('No appointments available.'),
                   // disabledDates: [DateTime(2023, 1, 20)],
                   disabledDays: [5, 6, 7],
                 ),
