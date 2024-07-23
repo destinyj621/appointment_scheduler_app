@@ -20,6 +20,8 @@ class _InfoState extends State<Info> {
         child: Column(
           children: <Widget>[
             _sendEmailButton(),
+            _callButton(),
+            _websiteButton(),
             _signOutButton(),
           ],
         ),
@@ -31,10 +33,30 @@ class _InfoState extends State<Info> {
     await Auth().signOut();
   }
 
+  Widget _websiteButton(){
+    return ElevatedButton(
+      onPressed: () async {
+        await EasyLauncher.url(
+            url: "https://www.familysmilecenter.net/",
+            mode: Mode.platformDefault);
+      },
+      child: const Text("Open Website"),
+    );
+  }
+
   Widget _signOutButton(){
     return ElevatedButton(
         onPressed: signOut,
         child: const Text('Sign Out'),
+    );
+  }
+
+  Widget _callButton(){
+    return ElevatedButton(
+      onPressed: () async {
+        await EasyLauncher.call(number: "6786229815");
+      },
+      child: const Text("Call Office"),
     );
   }
 
