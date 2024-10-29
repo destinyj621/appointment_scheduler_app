@@ -13,6 +13,7 @@ Office hours view
 ## What still needs to be completed?
 
 Aesthetic changes
+
 Backend system for appointment scheduling
 
 ## How to run the project?
